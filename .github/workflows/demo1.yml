@@ -3,7 +3,10 @@ on:
   pull_request: 
     types: 
       - opened
-  workflow_dispatch:
+    branches: 
+      - main
+      - 'dev-*'
+      - 'feat/**'
   push:
     branches:
       - main
